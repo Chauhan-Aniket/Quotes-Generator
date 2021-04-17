@@ -19,7 +19,7 @@ const getQuote = () => {
 			authorName.innerText = "- " + author;
 
 			if (author == null) {
-				authorName.innerText = "Anonymous";
+				authorName.innerText = "- Anonymous";
 			} else {
 				authorName.innerText = "- " + author;
 			}
