@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.45px;
+}
+
+body {
+  height: 100vh;
+  color: #303030;
+  background: #fefefe;
+}
+
+main {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+main :is(.title, .footer-text, .container) {
+  margin: auto;
+  max-width: 746px;
+  padding: 0 1rem;
+}
+
+main .content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+main header {
+  background: url("/low-poly-grid-haikei.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+main header .title {
+  margin-bottom: 2rem;
+  padding: 2rem 1rem;
+  color: #fefefe;
+}
+
+main footer {
+  padding: 1rem 0;
+}
+
+main footer a {
+  color: #297ea6;
+  text-decoration: none;
+}
+
+.container blockquote i {
+  color: #297ea6;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.container blockquote .quote-content {
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 500;
+  font-family: "Belleza", sans-serif;
+}
+
+.container blockquote .author-name {
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.container .btn-random {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  border: none;
+  padding: 0.65rem 1.25rem;
+  background: #297ea6;
+  color: #fefefe;
+  letter-spacing: 0.75px;
+  cursor: pointer;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: rotate 1000ms linear;
+          animation: rotate 1000ms linear;
+}
+
+.loader:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border: 10px solid #9ac9ff;
+  border-radius: 50%;
+  border-left: 10px solid #297ea6;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
