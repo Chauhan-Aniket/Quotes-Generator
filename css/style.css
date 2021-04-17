@@ -4,7 +4,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  letter-spacing: 0.45px;
 }
 
 body {
@@ -99,6 +98,8 @@ main footer a {
           transform: translate(-50%, -50%);
   -webkit-animation: rotate 1000ms linear;
           animation: rotate 1000ms linear;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
 }
 
 .loader:after {
@@ -116,10 +117,6 @@ main footer a {
 }
 
 @-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
@@ -127,10 +124,6 @@ main footer a {
 }
 
 @keyframes rotate {
-  from {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
